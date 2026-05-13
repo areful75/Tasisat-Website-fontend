@@ -88,6 +88,7 @@
 //               src={CEO}
 //               alt="Chairman"
 //               className="w-24 h-24 rounded-full object-cover border-2 border-[#df0707]"
+
 //             />
 //             <div>
 //               <h4 className="text-lg font-bold text-white">
