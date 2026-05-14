@@ -195,7 +195,7 @@ const Contract = () => {
 
           {/* Intro */}
           <p className="text-center text-gray-300 text-sm md:text-lg max-w-5xl mx-auto leading-relaxed mb-8">
-            UE Energy &amp; Control Ltd operates as part of a complete ecosystem
+           Tasisat operates as part of a complete ecosystem
             designed to train, develop, and empower engineers across the world.
           </p>
 
@@ -229,28 +229,28 @@ const Contract = () => {
 
             <p className="text-gray-300 text-sm md:text-lg">
               <span className="font-semibold text-white">
-                Ulterior Engineering
+                Tasisat Engineering
               </span>{" "}
               - Research, Development, Manufacturing, Design & Consultancy
             </p>
 
             <p className="text-gray-300 text-sm md:text-lg">
               <span className="font-semibold text-white">
-                UE Energy & Control Ltd.
+               Tasisat
               </span>{" "}
               - Core Engineering & EPC Division
             </p>
 
-            <p className="text-gray-300 text-sm md:text-lg">
+            {/* <p className="text-gray-300 text-sm md:text-lg">
               <span className="font-semibold text-white">
-                UE & Professional Training Institute
+                Tasisat
               </span>{" "}
               - ISO 21001 Certified & NSDA Approved Technical Education Hub
-            </p>
+            </p> */}
 
             <p className="text-gray-300 text-sm md:text-lg">
               <span className="font-semibold text-white">
-                UE Job Replacement Cell
+                Tasisat 
               </span>{" "}
               - Bridging skilled engineers with global employment opportunities
             </p>

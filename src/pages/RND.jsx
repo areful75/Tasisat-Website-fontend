@@ -424,7 +424,7 @@ const RND = () => {
               Building the Future of Smart Engineering
             </h2>
             <p className="text-gray-300 leading-relaxed text-lg mb-4">
-              The R&amp;D unit of UE Energy &amp; Control Ltd is dedicated to
+              The R&amp;D unit of Tasisat is dedicated to
               research, design, development, and testing of engineering
               solutions that address real-world industrial and technological
               challenges.

@@ -176,11 +176,11 @@ const AboutSection = () => {
         {/* Right: Text */}
         <div className="flex flex-col w-full lg:w-1/2 gap-6">
           <h2 className="text-4xl font-bold text-[#00B4D8]">
-            About UE Energy & Control Ltd.
+            About Tasisat.
           </h2>
 
           <p className="text-[#F8FAFC] text-lg leading-relaxed">
-            Ulterior Engineering Energy & Control Ltd. is a multidisciplinary
+            Tasisat. is a multidisciplinary
             engineering organization specializing in Automation, SCADA, Solar,
             BMS, Power, and EPC solutions.
           </p>

@@ -98,7 +98,7 @@ import { FaSolarPanel, FaCogs, FaProjectDiagram, FaBolt } from "react-icons/fa";
 
 const faqData = [
   {
-    question: "What services does UE Energy & Control provide?",
+    question: "What services does Tasisat provide?",
     answer:
       "We specialize in Automation, SCADA, Solar, BMS, Power, and EPC solutions, delivering turnkey projects that ensure efficiency and reliability.",
   },

@@ -330,7 +330,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <h2 className="text-xl font-bold text-[#00B4D8] mb-4">
-              Ulterior Engineering
+              Tasisat
             </h2>
 
             <p className="text-gray-300 text-sm leading-6 mb-4">
@@ -385,10 +385,8 @@ const Footer = () => {
               <p className="flex items-start gap-3">
                 <FaPhoneAlt className="text-[#00B4D8] mt-1" />
                 <span>
-                  <a href="tel:+8801818988959" className="hover:text-[#00B4D8]">+8801818988959</a><br/>
-                  <a href="tel:+8801638316427" className="hover:text-[#00B4D8]">+8801638316427</a><br/>
-                  <a href="tel:+8801972484608" className="hover:text-[#00B4D8]">+8801972484608</a><br/>
-                  <a href="tel:+8801832237811" className="hover:text-[#00B4D8]">+8801832237811</a>
+                  <a href="tel:+8801818988959" className="hover:text-[#00B4D8]">+8801818988959</a>
+                  
                 </span>
               </p>
 

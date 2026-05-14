@@ -264,7 +264,7 @@ const CertificatePage = () => {
         <div className="flex justify-center mb-6">
           <div className="bg-[#101833] text-white font-semibold text-sm md:text-lg px-4 py-2 flex items-center">
             <span className="w-2 h-6 bg-[#00B4D8] mr-2"></span>
-            Ulterior Engineering & Professional Training Institute
+           Tasisat Engineering 
           </div>
         </div>
 
@@ -363,11 +363,11 @@ const CertificatePage = () => {
         </div>
 
         {/* Bottom */}
-        <div className="flex justify-end mt-6">
+        {/* <div className="flex justify-end mt-6">
           <h2 className="text-xl md:text-3xl font-bold text-white">
             U<span className="text-[#00B4D8]">E</span>
           </h2>
-        </div>
+        </div> */}
 
       </div>
     </div>
