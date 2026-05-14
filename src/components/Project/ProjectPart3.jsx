@@ -365,7 +365,7 @@ const ProjectPart3 = () => {
 
         <div className="mt-10 text-center">
           <h2 className="mb-4 text-xl font-bold text-white md:text-2xl">
-            Our Foreign Project (KSA)
+            Our Projects
           </h2>
 
           <div className="border border-[#0089A8] p-3">

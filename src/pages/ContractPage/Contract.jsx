@@ -174,6 +174,7 @@ import { MdBusinessCenter } from "react-icons/md";
 import mapBanner from "./ContractImage/Doted-Map.jpg";
 import logo from "./ContractImage/UE PAGE LOGO.png";
 import black from  "./ContractImage/Ulteriorblack.png";
+import contract from "../../components/logo/contractMap.png"
 
 const Contract = () => {
   return (
@@ -281,7 +282,8 @@ const Contract = () => {
             {/* Map */}
             <div className="border border-[#0089A8] rounded-xl p-3 bg-[#0B1026]">
               <img
-                src={mapBanner}
+                //src={mapBanner}
+                src={contract}
                 alt="Map"
                 className="w-full object-contain rounded-lg"
               />
