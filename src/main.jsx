@@ -28,6 +28,7 @@ import MEPSection from './components/ProjectTasisat/MEPSectrion.jsx';
 import FireFitting from './components/ProjectTasisat/FireFitting.jsx';
 import Fm200 from './components/ProjectTasisat/Fm200.jsx';
 import ProjectPage from './components/Project/ProjectPage.jsx';
+import TasisatTeamMember from './pages/TasisatTeamMember/TasisatTeamMember.jsx';
 
 const router = createBrowserRouter([
   {
@@ -124,6 +125,10 @@ const router = createBrowserRouter([
       {
         path:"/projects/automation",
         element:<ProjectPage></ProjectPage>
+      },
+      {
+        path:"/team",
+        element:<TasisatTeamMember></TasisatTeamMember>
       }
 
     ]

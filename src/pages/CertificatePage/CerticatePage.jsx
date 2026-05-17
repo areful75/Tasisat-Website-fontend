@@ -395,7 +395,102 @@
 
 
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
+
+// import img1 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_14001 (1)_page-0001.jpg";
+// import img2 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_14001_page-0001.jpg";
+// import img3 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_45001_page-0001.jpg";
+// import img4 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_50001_page-0001.jpg";
+// import img5 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_9001_page-0001.jpg";
+
+// const CertificatePage = () => {
+//   const certificates = [
+//     {
+//       image: img1,
+//       title: "ISO 14001 Certified",
+//     },
+//     {
+//       image: img2,
+//       title: "ISO 14001 Certified",
+//     },
+//     {
+//       image: img3,
+//       title: "ISO 45001 Certified",
+//     },
+//     {
+//       image: img4,
+//       title: "ISO 50001 Certified",
+//     },
+//     {
+//       image: img5,
+//       title: "ISO 9001 Certified",
+//     },
+//   ];
+
+//   const [loaded, setLoaded] = useState(
+//     Array(certificates.length).fill(false)
+//   );
+
+//   const handleImageLoad = (index) => {
+//     const newLoaded = [...loaded];
+//     newLoaded[index] = true;
+//     setLoaded(newLoaded);
+//   };
+
+//   return (
+//     <div className="min-h-screen bg-[#0B1026] px-3 py-8">
+//       <div className="mx-auto max-w-7xl rounded-xl border border-[#0089A8] bg-[#0B1026] p-4 md:p-8">
+        
+//         {/* Top Banner */}
+//         <div className="mb-8 flex justify-center">
+//           <div className="flex items-center rounded-md bg-[#101833] px-5 py-3 text-sm font-semibold text-white shadow-lg md:text-xl">
+//             <span className="mr-3 h-7 w-2 rounded bg-[#00B4D8]"></span>
+//             Tasisat Engineering Certificates
+//           </div>
+//         </div>
+
+//         {/* Certificate Grid */}
+//         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+//           {certificates.map((certificate, index) => (
+//             <div
+//               key={index}
+//               className="rounded-xl border border-[#0089A8] bg-[#101833] p-4 text-center shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+//             >
+//               <div className="relative mx-auto overflow-hidden rounded-lg bg-white p-2">
+                
+//                 {/* Loading Skeleton */}
+//                 {!loaded[index] && (
+//                   <div className="absolute inset-0 animate-pulse bg-gray-300"></div>
+//                 )}
+
+//                 <img
+//                   src={certificate.image}
+//                   alt={certificate.title}
+//                   loading="lazy"
+//                   decoding="async"
+//                   onLoad={() => handleImageLoad(index)}
+//                   className={`mx-auto h-[360px] w-full max-w-[280px] rounded-md object-contain transition-opacity duration-500 md:h-[430px] ${
+//                     loaded[index] ? "opacity-100" : "opacity-0"
+//                   }`}
+//                 />
+//               </div>
+
+//               <p className="mt-4 text-sm font-semibold text-[#00B4D8] md:text-base">
+//                 {certificate.title}
+//               </p>
+//             </div>
+//           ))}
+//         </div>
+
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default CertificatePage;
+
+
+import React from "react";
 
 import img1 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_14001 (1)_page-0001.jpg";
 import img2 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_14001_page-0001.jpg";
@@ -427,16 +522,6 @@ const CertificatePage = () => {
     },
   ];
 
-  const [loaded, setLoaded] = useState(
-    Array(certificates.length).fill(false)
-  );
-
-  const handleImageLoad = (index) => {
-    const newLoaded = [...loaded];
-    newLoaded[index] = true;
-    setLoaded(newLoaded);
-  };
-
   return (
     <div className="min-h-screen bg-[#0B1026] px-3 py-8">
       <div className="mx-auto max-w-7xl rounded-xl border border-[#0089A8] bg-[#0B1026] p-4 md:p-8">
@@ -456,22 +541,13 @@ const CertificatePage = () => {
               key={index}
               className="rounded-xl border border-[#0089A8] bg-[#101833] p-4 text-center shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
             >
-              <div className="relative mx-auto overflow-hidden rounded-lg bg-white p-2">
-                
-                {/* Loading Skeleton */}
-                {!loaded[index] && (
-                  <div className="absolute inset-0 animate-pulse bg-gray-300"></div>
-                )}
-
+              <div className="mx-auto overflow-hidden rounded-lg bg-white p-2">
                 <img
                   src={certificate.image}
                   alt={certificate.title}
-                  loading="lazy"
-                  decoding="async"
-                  onLoad={() => handleImageLoad(index)}
-                  className={`mx-auto h-[360px] w-full max-w-[280px] rounded-md object-contain transition-opacity duration-500 md:h-[430px] ${
-                    loaded[index] ? "opacity-100" : "opacity-0"
-                  }`}
+                  loading="eager"
+                  decoding="sync"
+                  className="mx-auto h-[360px] w-full max-w-[280px] rounded-md object-contain md:h-[430px]"
                 />
               </div>
 

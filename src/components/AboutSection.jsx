@@ -108,7 +108,7 @@
 
 
 import React from "react";
-import CEO from "./BOD/ahmedsir2.jpg";
+import CEO from "../pages/TasisatTeamMember/teamImage/owner.jpg";
 
 // ✅ Internal images
 import homeImg from "./aboutpicture/solarrafatbhaiya.jpg";
@@ -200,7 +200,7 @@ const AboutSection = () => {
             />
             <div>
               <h4 className="text-lg font-bold text-white">
-                Ahmed AL-Rushan
+              Ali Al Rehaili
               </h4>
               <p className="text-[#94A3B8]">CEO</p>
             </div>
