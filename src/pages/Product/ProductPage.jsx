@@ -206,41 +206,7 @@ const ProductPage = () => {
       </section>
 
       {/* CERTIFICATE SECTION */}
-      <section className="px-6 md:px-12 lg:px-20 py-20 bg-[#101833]">
-        <div className="max-w-7xl mx-auto">
-          
-          <div className="text-center mb-14">
-            <p className="text-[#00B4D8] font-semibold uppercase tracking-widest">
-              {certificateSectionContent.badge}
-            </p>
-            <h2 className="text-3xl md:text-5xl font-bold mt-3">
-              {certificateSectionContent.title}
-            </h2>
-          </div>
-
-          {/* 3 COLUMN GRID */}
-          <div className="grid md:grid-cols-3 gap-6">
-            {certificates.map((item, index) => (
-              <div
-                key={index}
-                className="bg-[#101833] border border-white/10 rounded-2xl overflow-hidden hover:border-[#00B4D8]/40 transition"
-              >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-80 object-contain bg-white"
-                />
-                <div className="p-4">
-                  <h3 className="text-base font-semibold">
-                    {item.title}
-                  </h3>
-                </div>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
+     
 
     </div>
   );

@@ -244,130 +244,243 @@
 // export default CertificatePage;
 
 
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////
+
+// import React, { useState } from "react";
+
+
+// import img1 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_14001 (1)_page-0001.jpg";
+// import img2 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_14001_page-0001.jpg";
+// import img3 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_45001_page-0001.jpg";
+// import img4 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_50001_page-0001.jpg";
+// import img5 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_9001_page-0001.jpg";
+
+
+// const CertificatePage = () => {
+//   const [loaded, setLoaded] = useState({
+//     iso: false,
+//     nsda: false,
+//   });
+
+//   return (
+//     <div className="bg-[#0B1026] min-h-screen py-6 px-3">
+//       <div className="max-w-7xl mx-auto bg-[#0B1026] border border-[#0089A8] rounded-xl p-4 md:p-6">
+
+//         {/* Top banner */}
+//         <div className="flex justify-center mb-6">
+//           <div className="bg-[#101833] text-white font-semibold text-sm md:text-lg px-4 py-2 flex items-center">
+//             <span className="w-2 h-6 bg-[#00B4D8] mr-2"></span>
+//            Tasisat Engineering 
+//           </div>
+//         </div>
+
+//         {/* Three top boxes */}
+//         {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mb-6">
+
+//           <div className="border border-[#0089A8] rounded-md bg-[#101833] py-4 px-3 text-center">
+//             <p className="text-sm md:text-base text-gray-300">
+//               Number 1 Professional <br />
+//               Technical Training Institute <br />
+//               in Bangladesh
+//             </p>
+//           </div>
+
+//           <div className="border border-[#0089A8] rounded-md bg-[#101833] py-4 flex items-center justify-center">
+//             <img
+//               src="/"
+//               alt="Logo"
+//               loading="eager"
+//               decoding="async"
+//               className="h-12 md:h-16 object-contain"
+//             />
+//           </div>
+
+//           <div className="border border-[#0089A8] rounded-md bg-[#101833] py-4 px-3 text-center">
+//             <p className="text-sm md:text-base text-gray-300">
+//               All Companies first choice <br />
+//               for Technical Corporate <br />
+//               Training
+//             </p>
+//           </div>
+
+//         </div> */}
+
+//         {/* Certificates */}
+//         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center mb-6">
+
+//           {/* ISO */}
+//           <div className="text-center">
+//             <div className="border border-[#0089A8] p-2 bg-[#101833] relative">
+
+//               {/* Skeleton */}
+//               {!loaded.iso && (
+//                 <div className="absolute inset-0 bg-[#101833] animate-pulse"></div>
+//               )}
+
+//               <img
+//                 src={img1}
+//                 alt="ISO"
+//                 loading="lazy"
+//                 decoding="async"
+//                 width="300"
+//                 height="400"
+//                 onLoad={() =>
+//                   setLoaded((prev) => ({ ...prev, iso: true }))
+//                 }
+//                 className={`w-[240px] md:w-[300px] h-[320px] md:h-[400px] object-cover bg-white transition-opacity duration-500 ${
+//                   loaded.iso ? "opacity-100" : "opacity-0"
+//                 }`}
+//               />
+//             </div>
+
+//             <p className="mt-2 text-sm md:text-base text-[#00B4D8]">
+//               ISO 21001:2018 Certified
+//             </p>
+//           </div>
+
+//           {/* NSDA */}
+//           <div className="text-center">
+//             <div className="border border-[#0089A8] p-2 bg-[#101833] relative">
+
+//               {!loaded.nsda && (
+//                 <div className="absolute inset-0 bg-[#101833] animate-pulse"></div>
+//               )}
+
+//               <img
+//                 src={img1}
+//                 alt="NSDA"
+//                 loading="lazy"
+//                 decoding="async"
+//                 width="300"
+//                 height="400"
+//                 onLoad={() =>
+//                   setLoaded((prev) => ({ ...prev, nsda: true }))
+//                 }
+//                 className={`w-[240px] md:w-[300px] h-[320px] md:h-[400px] object-cover bg-white transition-opacity duration-500 ${
+//                   loaded.nsda ? "opacity-100" : "opacity-0"
+//                 }`}
+//               />
+//             </div>
+
+//             <p className="mt-2 text-sm md:text-base text-[#00B4D8]">
+//               NSDA STP- DHA-001675 Approved
+//             </p>
+//           </div>
+//         </div>
+
+//         {/* Bottom */}
+//         {/* <div className="flex justify-end mt-6">
+//           <h2 className="text-xl md:text-3xl font-bold text-white">
+//             U<span className="text-[#00B4D8]">E</span>
+//           </h2>
+//         </div> */}
+
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default CertificatePage;
+
+
+
+
 import React, { useState } from "react";
 
-import ISO from "./Image/ISO.jpeg";
-import NSDA from "./Image/NSDA.jpeg";
-import UlteriorLogo from "./Image/UlteriorLogoWhite.png";
+import img1 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_14001 (1)_page-0001.jpg";
+import img2 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_14001_page-0001.jpg";
+import img3 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_45001_page-0001.jpg";
+import img4 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_50001_page-0001.jpg";
+import img5 from "./Image/TASISAT_CONTRACTING_EST_SoftCopy_ISO_9001_page-0001.jpg";
 
 const CertificatePage = () => {
-  const [loaded, setLoaded] = useState({
-    iso: false,
-    nsda: false,
-  });
+  const certificates = [
+    {
+      image: img1,
+      title: "ISO 14001 Certified",
+    },
+    {
+      image: img2,
+      title: "ISO 14001 Certified",
+    },
+    {
+      image: img3,
+      title: "ISO 45001 Certified",
+    },
+    {
+      image: img4,
+      title: "ISO 50001 Certified",
+    },
+    {
+      image: img5,
+      title: "ISO 9001 Certified",
+    },
+  ];
+
+  const [loaded, setLoaded] = useState(
+    Array(certificates.length).fill(false)
+  );
+
+  const handleImageLoad = (index) => {
+    const newLoaded = [...loaded];
+    newLoaded[index] = true;
+    setLoaded(newLoaded);
+  };
 
   return (
-    <div className="bg-[#0B1026] min-h-screen py-6 px-3">
-      <div className="max-w-7xl mx-auto bg-[#0B1026] border border-[#0089A8] rounded-xl p-4 md:p-6">
-
-        {/* Top banner */}
-        <div className="flex justify-center mb-6">
-          <div className="bg-[#101833] text-white font-semibold text-sm md:text-lg px-4 py-2 flex items-center">
-            <span className="w-2 h-6 bg-[#00B4D8] mr-2"></span>
-           Tasisat Engineering 
+    <div className="min-h-screen bg-[#0B1026] px-3 py-8">
+      <div className="mx-auto max-w-7xl rounded-xl border border-[#0089A8] bg-[#0B1026] p-4 md:p-8">
+        
+        {/* Top Banner */}
+        <div className="mb-8 flex justify-center">
+          <div className="flex items-center rounded-md bg-[#101833] px-5 py-3 text-sm font-semibold text-white shadow-lg md:text-xl">
+            <span className="mr-3 h-7 w-2 rounded bg-[#00B4D8]"></span>
+            Tasisat Engineering Certificates
           </div>
         </div>
 
-        {/* Three top boxes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mb-6">
+        {/* Certificate Grid */}
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {certificates.map((certificate, index) => (
+            <div
+              key={index}
+              className="rounded-xl border border-[#0089A8] bg-[#101833] p-4 text-center shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+            >
+              <div className="relative mx-auto overflow-hidden rounded-lg bg-white p-2">
+                
+                {/* Loading Skeleton */}
+                {!loaded[index] && (
+                  <div className="absolute inset-0 animate-pulse bg-gray-300"></div>
+                )}
 
-          <div className="border border-[#0089A8] rounded-md bg-[#101833] py-4 px-3 text-center">
-            <p className="text-sm md:text-base text-gray-300">
-              Number 1 Professional <br />
-              Technical Training Institute <br />
-              in Bangladesh
-            </p>
-          </div>
+                <img
+                  src={certificate.image}
+                  alt={certificate.title}
+                  loading="lazy"
+                  decoding="async"
+                  onLoad={() => handleImageLoad(index)}
+                  className={`mx-auto h-[360px] w-full max-w-[280px] rounded-md object-contain transition-opacity duration-500 md:h-[430px] ${
+                    loaded[index] ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              </div>
 
-          <div className="border border-[#0089A8] rounded-md bg-[#101833] py-4 flex items-center justify-center">
-            <img
-              src="/"
-              alt="Logo"
-              loading="eager"
-              decoding="async"
-              className="h-12 md:h-16 object-contain"
-            />
-          </div>
-
-          <div className="border border-[#0089A8] rounded-md bg-[#101833] py-4 px-3 text-center">
-            <p className="text-sm md:text-base text-gray-300">
-              All Companies first choice <br />
-              for Technical Corporate <br />
-              Training
-            </p>
-          </div>
-
-        </div>
-
-        {/* Certificates */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center mb-6">
-
-          {/* ISO */}
-          <div className="text-center">
-            <div className="border border-[#0089A8] p-2 bg-[#101833] relative">
-
-              {/* Skeleton */}
-              {!loaded.iso && (
-                <div className="absolute inset-0 bg-[#101833] animate-pulse"></div>
-              )}
-
-              <img
-                src={ISO}
-                alt="ISO"
-                loading="lazy"
-                decoding="async"
-                width="300"
-                height="400"
-                onLoad={() =>
-                  setLoaded((prev) => ({ ...prev, iso: true }))
-                }
-                className={`w-[240px] md:w-[300px] h-[320px] md:h-[400px] object-cover bg-white transition-opacity duration-500 ${
-                  loaded.iso ? "opacity-100" : "opacity-0"
-                }`}
-              />
+              <p className="mt-4 text-sm font-semibold text-[#00B4D8] md:text-base">
+                {certificate.title}
+              </p>
             </div>
-
-            <p className="mt-2 text-sm md:text-base text-[#00B4D8]">
-              ISO 21001:2018 Certified
-            </p>
-          </div>
-
-          {/* NSDA */}
-          <div className="text-center">
-            <div className="border border-[#0089A8] p-2 bg-[#101833] relative">
-
-              {!loaded.nsda && (
-                <div className="absolute inset-0 bg-[#101833] animate-pulse"></div>
-              )}
-
-              <img
-                src={NSDA}
-                alt="NSDA"
-                loading="lazy"
-                decoding="async"
-                width="300"
-                height="400"
-                onLoad={() =>
-                  setLoaded((prev) => ({ ...prev, nsda: true }))
-                }
-                className={`w-[240px] md:w-[300px] h-[320px] md:h-[400px] object-cover bg-white transition-opacity duration-500 ${
-                  loaded.nsda ? "opacity-100" : "opacity-0"
-                }`}
-              />
-            </div>
-
-            <p className="mt-2 text-sm md:text-base text-[#00B4D8]">
-              NSDA STP- DHA-001675 Approved
-            </p>
-          </div>
+          ))}
         </div>
-
-        {/* Bottom */}
-        {/* <div className="flex justify-end mt-6">
-          <h2 className="text-xl md:text-3xl font-bold text-white">
-            U<span className="text-[#00B4D8]">E</span>
-          </h2>
-        </div> */}
 
       </div>
     </div>

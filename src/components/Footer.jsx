@@ -443,7 +443,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="border-t border-[#0089A8] mt-10 pt-5 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} Ulterior Engineering. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Tasisat Engineering. All rights reserved.</p>
           <p>Designed for engineering, innovation, and growth.</p>
         </div>
       </div>
