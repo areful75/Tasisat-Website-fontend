@@ -99,10 +99,10 @@ const router = createBrowserRouter([
       //   path:"/projects/fire-alarm",
       //   element:<FireAlarm></FireAlarm>
       // },
-      {
-        path:"/projects/bms",
-        element:<BMS></BMS>
-      },
+      // {
+      //   path:"/projects/bms",
+      //   element:<BMS></BMS>
+      // },
       {
         path:"/projects/solar-pumping",
         element:<SolarPumping></SolarPumping>
@@ -124,7 +124,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/projects/automation",
-        element:<ProjectPage></ProjectPage>
+        element:<BMS></BMS>
       },
       {
         path:"/team",

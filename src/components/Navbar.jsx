@@ -525,7 +525,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { NavLink } from "react-router";
-import logo from "./logo/tasisatlogo2.png";
+import logo from "./logo/tasisat-Photoroom-logo 2.png";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -541,8 +541,8 @@ const Navbar = () => {
     "Automation",
     "MEP",
     "Lighting Control",
-    "BMS",
-    "FM200",
+    // "BMS",
+    // "FM200",
     "Fire Fighting System",
   ];
 
@@ -552,12 +552,12 @@ const Navbar = () => {
       : "hover:text-[#00B4D8] transition duration-300 whitespace-nowrap";
 
   return (
-    <nav className="w-full bg-[#0B1026]/90 shadow-md sticky top-0 z-50 backdrop-blur-md">
+    <nav className="w-full bg-[#0B1026]/95 shadow-md sticky top-0 z-50 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <NavLink to="/" className="flex items-center">
-            <img src={logo} alt="TASISAT Logo" className="h-12 w-auto" />
+            <img src={logo} alt="TASISAT Logo" className="h-16 w-auto" />
           </NavLink>
 
           {/* Desktop Menu */}
