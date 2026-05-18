@@ -315,6 +315,7 @@ const BMS = () => {
                     </span>{" "}
                     {project.details}
                   </span>
+                  
                 </p> */}
               </div>
 
