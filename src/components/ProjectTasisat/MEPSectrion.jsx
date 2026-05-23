@@ -218,6 +218,12 @@
 import React from "react";
 import { FaIndustry, FaCalendarAlt, FaUserTie } from "react-icons/fa";
 import { MdEngineering } from "react-icons/md";
+import image1 from "../ProjectTasisat/TasisatProjectImage/MEP/mep1.jpeg";
+import image2 from "../ProjectTasisat/TasisatProjectImage/MEP/mep2.jpeg";
+import image3 from "../ProjectTasisat/TasisatProjectImage/MEP/mep3.jpeg";
+import image4 from "../ProjectTasisat/TasisatProjectImage/MEP/mep4.jpeg";
+import image5 from "../ProjectTasisat/TasisatProjectImage/MEP/mep5.jpeg";
+import image6 from "../ProjectTasisat/TasisatProjectImage/MEP/mep6.jpeg";
 
 const projects = [
   {
@@ -313,14 +319,15 @@ const projects = [
   },
 ];
 
-const galleryImages = [
-  "https://i.ibb.co/Vcqj6nfq/IMG-04.png",
-  "https://i.ibb.co/n86YcR08/IMG-05.png",
-  "https://i.ibb.co/B24D8pD6/IMG-06.png",
-  "https://i.ibb.co/WW8mmWCh/IMG-07.png",
-];
+const galleryImages = [image5, image6, image3, image4];
 
 const MEPSection = () => {
+  const imageBoxClass =
+    "relative overflow-hidden rounded-3xl bg-[#101833] shadow-md shadow-[#00B4D8]/10 group cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-[#00B4D8]/20 hover:-translate-y-1";
+
+  const imageClass =
+    "h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110";
+
   return (
     <div className="min-h-screen bg-[#0B1026] px-4 py-10">
       <div className="mx-auto max-w-7xl rounded-2xl border border-[#0089A8]/60 bg-[#0B1026] p-5 md:p-8">
@@ -348,41 +355,51 @@ const MEPSection = () => {
             <div className="mx-auto mt-5 h-1 w-40 rounded-full bg-[#00B4D8] lg:mx-0"></div>
           </div>
 
-          {/* Image Gallery */}
-          <div className="grid grid-cols-2 gap-4 w-full lg:w-1/2">
+          {/* Perfect Responsive Image Gallery */}
+          <div className="grid w-full grid-cols-2 gap-3 auto-rows-[135px] sm:gap-4 sm:auto-rows-[170px] md:auto-rows-[210px] lg:w-1/2 lg:auto-rows-[190px] xl:auto-rows-[220px]">
             {/* First Image */}
-            <div className="relative overflow-hidden rounded-3xl shadow-md shadow-[#00B4D8]/10 group cursor-pointer transition-all duration-500 row-span-2 col-span-2 lg:col-span-1 lg:row-span-2 hover:shadow-2xl hover:shadow-[#00B4D8]/20 hover:-translate-y-1 hover:scale-[1.05]">
+            <div
+              className={`${imageBoxClass} col-span-2 row-span-2 lg:col-span-1 lg:row-span-2`}
+            >
               <img
                 src={galleryImages[0]}
                 alt="MEP Project 1"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className={imageClass}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
             {/* Second Image */}
-            <div className="relative overflow-hidden rounded-3xl shadow-md shadow-[#00B4D8]/10 group cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-[#00B4D8]/20 hover:-translate-y-1 hover:scale-[1.05]">
+            <div className={imageBoxClass}>
               <img
                 src={galleryImages[1]}
                 alt="MEP Project 2"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className={imageClass}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
             {/* Third Image */}
-            <div className="relative overflow-hidden rounded-3xl shadow-md shadow-[#00B4D8]/10 group cursor-pointer transition-all duration-500 row-span-2 hover:shadow-2xl hover:shadow-[#00B4D8]/20 hover:-translate-y-1 hover:scale-[1.05]">
+            <div className={`${imageBoxClass} row-span-2`}>
               <img
                 src={galleryImages[2]}
                 alt="MEP Project 3"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className={imageClass}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
             {/* Fourth Image */}
-            <div className="relative overflow-hidden rounded-3xl shadow-md shadow-[#00B4D8]/10 group cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-[#00B4D8]/20 hover:-translate-y-1 hover:scale-[1.05]">
+            <div className={imageBoxClass}>
               <img
                 src={galleryImages[3]}
                 alt="MEP Project 4"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className={imageClass}
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>

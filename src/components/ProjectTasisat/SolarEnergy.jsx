@@ -473,10 +473,10 @@
 import React from "react";
 import { FaIndustry, FaCalendarAlt, FaUserTie } from "react-icons/fa";
 
-import img1 from "./TasisatProjectImage/WhatsApp Image 2026-05-15 at 5.55.00 PM.jpeg";
-import img2 from "./TasisatProjectImage/WhatsApp Image 2026-05-17 at 12.38.43.jpeg";
-import img3 from "./TasisatProjectImage/WhatsApp Image 2026-05-17 at 12.38.46.jpeg";
-import img4 from "./TasisatProjectImage/WhatsApp Image 2026-05-17 at 9.05.24 AM (1).jpeg";
+import img1 from "../ProjectTasisat/TasisatProjectImage/Solar/solar1.jpeg";
+import img2 from "../ProjectTasisat/TasisatProjectImage/Solar/solar2.jpeg";
+import img3 from "../ProjectTasisat/TasisatProjectImage/Solar/solar3.jpeg";
+import img4 from "../ProjectTasisat/TasisatProjectImage/Solar/solar4.jpeg";
 
 const projects = [
   {
@@ -584,7 +584,15 @@ const projects = [
   },
 ];
 
+const galleryImages = [img1, img2, img3, img4];
+
 const SolarEnergy = () => {
+  const imageBoxClass =
+    "group relative overflow-hidden rounded-3xl bg-[#101833] shadow-md shadow-[#00B4D8]/10 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#00B4D8]/20";
+
+  const imageClass =
+    "h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110";
+
   return (
     <div className="min-h-screen bg-[#0B1026] px-4 py-10">
       <div className="mx-auto max-w-7xl rounded-2xl border border-[#0089A8]/60 bg-[#0B1026] p-5 md:p-8">
@@ -611,41 +619,51 @@ const SolarEnergy = () => {
             <div className="mx-auto mt-5 h-1 w-40 rounded-full bg-[#00B4D8] lg:mx-0"></div>
           </div>
 
-          {/* Image Gallery */}
-          <div className="grid grid-cols-2 gap-4 w-full lg:w-1/2">
+          {/* Perfect Image Gallery */}
+          <div className="grid w-full grid-cols-2 gap-3 auto-rows-[135px] sm:gap-4 sm:auto-rows-[165px] md:auto-rows-[200px] lg:w-1/2 lg:auto-rows-[170px] xl:auto-rows-[195px]">
             {/* First Image */}
-            <div className="relative overflow-hidden rounded-3xl shadow-md shadow-[#00B4D8]/10 group cursor-pointer transition-all duration-500 row-span-2 col-span-2 lg:col-span-1 lg:row-span-2 hover:shadow-2xl hover:shadow-[#00B4D8]/20 hover:-translate-y-1 hover:scale-[1.05]">
+            <div
+              className={`${imageBoxClass} col-span-2 row-span-2 lg:col-span-1 lg:row-span-2`}
+            >
               <img
-                src={img1}
+                src={galleryImages[0]}
                 alt="Solar Energy Project 1"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className={imageClass}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
             {/* Second Image */}
-            <div className="relative overflow-hidden rounded-3xl shadow-md shadow-[#00B4D8]/10 group cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-[#00B4D8]/20 hover:-translate-y-1 hover:scale-[1.05]">
+            <div className={imageBoxClass}>
               <img
-                src={img2}
+                src={galleryImages[1]}
                 alt="Solar Energy Project 2"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className={imageClass}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
             {/* Third Image */}
-            <div className="relative overflow-hidden rounded-3xl shadow-md shadow-[#00B4D8]/10 group cursor-pointer transition-all duration-500 row-span-2 hover:shadow-2xl hover:shadow-[#00B4D8]/20 hover:-translate-y-1 hover:scale-[1.05]">
+            <div className={`${imageBoxClass} row-span-2`}>
               <img
-                src={img3}
+                src={galleryImages[2]}
                 alt="Solar Energy Project 3"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className={imageClass}
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
             {/* Fourth Image */}
-            <div className="relative overflow-hidden rounded-3xl shadow-md shadow-[#00B4D8]/10 group cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-[#00B4D8]/20 hover:-translate-y-1 hover:scale-[1.05]">
+            <div className={imageBoxClass}>
               <img
-                src={img4}
+                src={galleryImages[3]}
                 alt="Solar Energy Project 4"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className={imageClass}
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>

@@ -86,15 +86,18 @@
 
 import React from "react";
 import {
-  FaIndustry,
   FaCalendarAlt,
   FaUserTie,
   FaFireExtinguisher,
 } from "react-icons/fa";
 import { MdEngineering } from "react-icons/md";
 
+import image1 from "../ProjectTasisat/TasisatProjectImage/FireFiting Systems/fire1.jpeg";
+import image2 from "../ProjectTasisat/TasisatProjectImage/FireFiting Systems/fire2.jpeg";
+import image3 from "../ProjectTasisat/TasisatProjectImage/FireFiting Systems/fire3.jpeg";
+import image4 from "../ProjectTasisat/TasisatProjectImage/FireFiting Systems/fire4.jpeg";
+
 const projects = [
-    //FireFitting
   {
     title: "Fire Piping Network and Flushing for Parcel 4.11",
     client: "Al-Bawani",
@@ -106,23 +109,23 @@ const projects = [
     client: "Thabat",
     details: "2022",
   },
-  //FM200
   {
     title:
       "Installation, Testing and Commissioning of FM200 System for MTR - Parcel 2.04",
     client: "Al-Bawani",
     details: "2020",
-  }
+  },
 ];
 
-const galleryImages = [
-  "https://i.ibb.co/Vcqj6nfq/IMG-04.png",
-  "https://i.ibb.co/n86YcR08/IMG-05.png",
-  "https://i.ibb.co/B24D8pD6/IMG-06.png",
-  "https://i.ibb.co/WW8mmWCh/IMG-07.png",
-];
+const galleryImages = [image1, image2, image3, image4];
 
 const FireFitting = () => {
+  const imageBoxClass =
+    "group relative overflow-hidden rounded-3xl border border-[#0089A8]/30 bg-[#101833] shadow-md shadow-[#00B4D8]/10 transition-all duration-500 hover:-translate-y-1 hover:border-[#00B4D8]/70 hover:shadow-2xl hover:shadow-[#00B4D8]/20";
+
+  const imageClass =
+    "h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110";
+
   return (
     <div className="min-h-screen bg-[#0B1026] px-4 py-10">
       <div className="mx-auto max-w-7xl rounded-2xl border border-[#0089A8]/60 bg-[#0B1026] p-5 md:p-8">
@@ -150,42 +153,60 @@ const FireFitting = () => {
             <div className="mx-auto mt-5 h-1 w-40 rounded-full bg-[#00B4D8] lg:mx-0"></div>
           </div>
 
-          {/* Image Gallery */}
-          <div className="grid grid-cols-2 gap-4 w-full lg:w-1/2">
+          {/* Perfect Image Gallery */}
+          <div className="grid w-full grid-cols-2 gap-3 auto-rows-[135px] sm:gap-4 sm:auto-rows-[170px] md:auto-rows-[210px] lg:w-1/2 lg:auto-rows-[185px] xl:auto-rows-[210px]">
             {/* First Image */}
-            <div className="relative overflow-hidden rounded-3xl shadow-md shadow-[#00B4D8]/10 group cursor-pointer transition-all duration-500 row-span-2 col-span-2 lg:col-span-1 lg:row-span-2 hover:shadow-2xl hover:shadow-[#00B4D8]/20 hover:-translate-y-1 hover:scale-[1.05]">
+            <div
+              className={`${imageBoxClass} col-span-2 row-span-2 lg:col-span-1 lg:row-span-2`}
+            >
               <img
                 src={galleryImages[0]}
                 alt="Fire Fighting Project 1"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className={imageClass}
+                loading="lazy"
+                decoding="async"
               />
+
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0B1026]/45 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
             </div>
 
             {/* Second Image */}
-            <div className="relative overflow-hidden rounded-3xl shadow-md shadow-[#00B4D8]/10 group cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-[#00B4D8]/20 hover:-translate-y-1 hover:scale-[1.05]">
+            <div className={imageBoxClass}>
               <img
                 src={galleryImages[1]}
                 alt="Fire Fighting Project 2"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className={imageClass}
+                loading="lazy"
+                decoding="async"
               />
+
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0B1026]/45 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
             </div>
 
             {/* Third Image */}
-            <div className="relative overflow-hidden rounded-3xl shadow-md shadow-[#00B4D8]/10 group cursor-pointer transition-all duration-500 row-span-2 hover:shadow-2xl hover:shadow-[#00B4D8]/20 hover:-translate-y-1 hover:scale-[1.05]">
+            <div className={`${imageBoxClass} row-span-2`}>
               <img
                 src={galleryImages[2]}
                 alt="Fire Fighting Project 3"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className={imageClass}
+                loading="lazy"
+                decoding="async"
               />
+
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0B1026]/45 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
             </div>
 
             {/* Fourth Image */}
-            <div className="relative overflow-hidden rounded-3xl shadow-md shadow-[#00B4D8]/10 group cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-[#00B4D8]/20 hover:-translate-y-1 hover:scale-[1.05]">
+            <div className={imageBoxClass}>
               <img
                 src={galleryImages[3]}
                 alt="Fire Fighting Project 4"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className={imageClass}
+                loading="lazy"
+                decoding="async"
               />
+
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0B1026]/45 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
             </div>
           </div>
         </div>
