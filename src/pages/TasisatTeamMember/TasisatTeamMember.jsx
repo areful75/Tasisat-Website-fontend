@@ -23,7 +23,7 @@ const teamMembers = [
   {
     id: 2,
     name: "Ahmed AL-Rusan",
-    role: "Deputy General Manager",
+    role: "General Manager",
     image: DGM,
   },
   {

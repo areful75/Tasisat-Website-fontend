@@ -297,7 +297,7 @@ const teamMembers = [
   {
     id: 2,
     name: "Ahmed AL-Rusan",
-    role: "DGM",
+    role: "General Manager",
     image: Researcher,
     facebook: "https://facebook.com/",
     linkedin: "https://linkedin.com/",
